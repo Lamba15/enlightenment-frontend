@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="book-detailed-container" xmlns="http://www.w3.org/1999/html">
+    <img src="{{book?.imageUrl}}" alt="">
+
+    <div class="detailed-container">
+      <h1>
+        {{book?.name}}
+      </h1>
+      <h3>
+        {{book?.author}}
+      </h3>
+
+      <p>
+        {{book?.description}}
+      </p>
+
+      <form #form="ngForm" class="add-to-cart-container" (ngSubmit)="addToCart()" >
+        <input name="requiredAmount" class="add-to-cart-input" type="number" required minlength="1" maxlength="{{book?.stock}}" [(ngModel)]="amount"/>
+        /
+        {{book?.stock}}
+
+        <input class="button" type="submit" value="Add to cart" [disabled]="form.invalid" />
+      </form>
+
+      <p>
+        Total: {{book.price * amount}} LE
+      </p>
+
+    </div>
+
+  </div>
+
+  <div>
+    <h1>
+      comments and reviews area in the future
+    </h1>
+  </div>
+</div>

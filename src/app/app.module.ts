@@ -10,6 +10,8 @@ import {RouterOutlet} from "@angular/router";
 import { BooksComponent } from './books/books.component';
 import { BookComponent } from './book/book.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BookDetailedComponent } from './book-detailed/book-detailed.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,13 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
     FilterComponent,
     BooksComponent,
     BookComponent,
-
+    BookDetailedComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/projects/enlightenment'}
