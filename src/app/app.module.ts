@@ -12,6 +12,7 @@ import { BookComponent } from './book/book.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BookDetailedComponent } from './book-detailed/book-detailed.component';
 import {FormsModule} from "@angular/forms";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {FormsModule} from "@angular/forms";
     RouterOutlet,
     HttpClientModule,
     FormsModule,
+    FontAwesomeModule,
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/projects/enlightenment'}

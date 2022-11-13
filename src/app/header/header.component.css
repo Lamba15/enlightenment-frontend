@@ -3,7 +3,7 @@
   justify-content: space-between;
   height: 85px;
   padding-left: 24px;
-  background: #514230;
+  background: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
   box-sizing: border-box;
   padding-top: 6px;
@@ -11,7 +11,11 @@
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-.header-container > div {
+.header-container > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-container > .container > div {
   display: flex;
   align-items: center;
 }
