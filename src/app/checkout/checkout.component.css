@@ -1,6 +1,14 @@
 .checkoutContainer {
   display: flex;
   flex-direction: column;
+  margin-top: 45px;
+  gap: 45px;
+}
+
+.checkout-buy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 /*# sourceMappingURL=checkout.component.css.map */

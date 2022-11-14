@@ -1,5 +1,18 @@
-<div class="checkoutContainer">
+<div class="checkoutContainer container">
   <app-checkout-item *ngFor="let cartItem of cartItems" [cartItem]="cartItem">
 
   </app-checkout-item>
+
+
+  <hr style="height: 1px; width: 100%" />
+
+  <div class="checkout-buy-container">
+    <h3 style="text-align: right; padding: 0; margin: 0">
+      subtotal: {{this.totalCartAmount}}
+    </h3>
+
+    <button class="button" style="margin-left: auto" (click)="finalBuy()">
+      Buy
+    </button>
+  </div>
 </div>

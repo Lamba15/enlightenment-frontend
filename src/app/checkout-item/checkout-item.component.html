@@ -1,9 +1,20 @@
 <div class="container">
-  <div class="itemContainer">
+  <div class="item-container">
     <img src="{{cartItem.book.imageUrl}}"/>
 
-    <h1>
-      {{cartItem.book.name}}
-    </h1>
+    <div class="text-container">
+      <h1>
+        {{cartItem.book.name}} - {{cartItem.book.author}}
+      </h1>
+
+      <h3>
+        {{cartItem.book.price}} x {{cartItem.amount}} = {{cartItem.book.price * cartItem.amount}} LE
+      </h3>
+
+      <button class="button" (click)="removeItem()">
+        Remove
+      </button>
+    </div>
+
   </div>
 </div>

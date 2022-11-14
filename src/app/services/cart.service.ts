@@ -18,7 +18,7 @@ export class CartService {
     return this._cartItems$;
   }
 
-  addToCart(cartItems: CartItem[]){
+  setCart(cartItems: CartItem[]){
     return this.cartItems.next(cartItems);
   }
 

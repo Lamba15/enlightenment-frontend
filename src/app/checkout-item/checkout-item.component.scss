@@ -1,0 +1,15 @@
+.item-container {
+  display: flex;
+}
+
+.text-container {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1, h3, h2 {
+  margin: 0;
+  padding: 0;
+}
