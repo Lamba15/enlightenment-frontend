@@ -1,6 +1,8 @@
 # Enlightenment
 
-E commerce application for books, frond end side, build in Angular,
+E commerce application for books, frond end side, build in Angular.
+
+hosted at: https://nouraboelsoud.com/projects/enlightenment
 
 ## Development server
 
