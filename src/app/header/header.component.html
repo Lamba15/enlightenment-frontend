@@ -10,8 +10,10 @@
     </div>
 
     <div>
-      <p>{{this.totalCartAmount}}</p>
-      <fa-icon [icon]="faCart"></fa-icon>
+      <a style="display: flex; align-items: center" routerLink="/checkout">
+        <p>{{this.totalCartAmount}}</p>
+        <fa-icon [icon]="faCart"></fa-icon>
+      </a>
     </div>
   </div>
 </div>

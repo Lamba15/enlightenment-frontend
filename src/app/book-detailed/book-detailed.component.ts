@@ -56,6 +56,7 @@ export class BookDetailedComponent implements OnInit {
 
   addToCart() {
     this.cartService.addToCart([{book: this.book, amount: this.amount}, ...this.cartItems]);
+    alert("Book added to cart")
   }
 
 }

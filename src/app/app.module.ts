@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BookDetailedComponent } from './book-detailed/book-detailed.component';
 import {FormsModule} from "@angular/forms";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CheckoutItemComponent } from './checkout-item/checkout-item.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BooksComponent,
     BookComponent,
     BookDetailedComponent,
+    CheckoutComponent,
+    CheckoutItemComponent,
   ],
   imports: [
     BrowserModule,
