@@ -15,7 +15,7 @@
       </p>
 
       <form #form="ngForm" class="add-to-cart-container" (ngSubmit)="addToCart()" >
-        <input name="requiredAmount" class="add-to-cart-input" type="number" required min="1" max="{{book?.stock}}" [(ngModel)]="amount"/>
+        <input name="requiredAmount" class="add-to-cart-input" type="number" required min="1" max="{{book.stock}}" [(ngModel)]="amount"/>
         /
         {{book.stock}}
 

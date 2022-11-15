@@ -1,6 +1,8 @@
 # Enlightenment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+E-commerce application with features like (shopping cart, navigation, form validation) for books, frond end side, build in Angular.
+
+hosted at: https://nouraboelsoud.com/projects/enlightenment
 
 ## Development server
 
