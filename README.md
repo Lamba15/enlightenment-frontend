@@ -1,7 +1,6 @@
 # Enlightenment
 
 E-commerce application with features like (shopping cart, navigation, form validation) for books, frond end side, build in Angular.
-
 hosted at: https://nouraboelsoud.com/projects/enlightenment
 
 ## Development server
