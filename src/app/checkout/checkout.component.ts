@@ -11,6 +11,10 @@ export class CheckoutComponent implements OnInit {
 
   cartItems: CartItem[] = [];
 
+  name: string = '';
+  address: string = '';
+  creditCard: string = '';
+
   totalCartAmount = 0;
 
   constructor(private cartService: CartService) {
@@ -34,6 +38,10 @@ export class CheckoutComponent implements OnInit {
       return x.book.id !== cartItem.book.id
     }));
     alert("Book removed from cart");
+  }
+
+  nameChanged(name: string){
+    console.log(name)
   }
 
   finalBuy() {

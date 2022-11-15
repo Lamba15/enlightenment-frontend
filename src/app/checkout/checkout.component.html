@@ -5,13 +5,29 @@
 
   <hr style="height: 1px; width: 100%"/>
 
-  <div class="checkout-buy-container">
-    <h3 style="text-align: right; padding: 0; margin: 0">
-      subtotal: {{this.totalCartAmount}}
-    </h3>
+  <form #form="ngForm" (ngSubmit)="finalBuy()">
+    <label>
+      name
+    </label>
+    <input type="text" name="name" required minlength="3" (ngModelChange)="nameChanged($event)" [(ngModel)]="name">
+    <label>
+     address
+    </label>
+    <input type="text" name="address" required [(ngModel)]="address">
+    <label>
+      credit card
+    </label>
+    <input type="text" name="creditCard" required minlength="16" maxlength="16" [(ngModel)]="creditCard">
 
-    <button class="button" style="margin-left: auto" (click)="finalBuy()">
-      Buy
-    </button>
-  </div>
+
+    <div class="checkout-buy-container">
+      <h3 style="text-align: right; padding: 0; margin: 0">
+        subtotal: {{this.totalCartAmount}}
+      </h3>
+
+      <button class="button" type="submit" style="margin-left: auto" [disabled]="form.invalid">
+        Buy
+      </button>
+    </div>
+  </form>
 </div>
