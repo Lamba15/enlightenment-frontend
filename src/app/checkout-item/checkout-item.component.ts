@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {CartItem} from "../models/CartItem";
 import {CartService} from "../services/cart.service";
 
@@ -10,6 +10,8 @@ import {CartService} from "../services/cart.service";
 export class CheckoutItemComponent implements OnInit {
 
   @Input() cartItem: CartItem;
+
+  @Output() removeFromCart = new EventEmitter();
 
   cartItems: CartItem[];
 
@@ -38,11 +40,6 @@ export class CheckoutItemComponent implements OnInit {
     });
   }
 
-  removeItem() {
-    this.cartService.setCart(this.cartItems.filter((x) => {
-      return x.book.id !== this.cartItem.book.id
-    }));
-    alert("Book removed from cart");
-  }
+
 
 }

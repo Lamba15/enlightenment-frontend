@@ -11,7 +11,7 @@
         {{cartItem.book.price}} x {{cartItem.amount}} = {{cartItem.book.price * cartItem.amount}} LE
       </h3>
 
-      <button class="button" (click)="removeItem()">
+      <button class="button" (click)="removeFromCart.emit(cartItem.book)">
         Remove
       </button>
     </div>

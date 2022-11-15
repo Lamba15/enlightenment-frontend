@@ -29,6 +29,13 @@ export class CheckoutComponent implements OnInit {
     });
   }
 
+  removeItem(cartItem: CartItem) {
+    this.cartService.setCart(this.cartItems.filter((x) => {
+      return x.book.id !== cartItem.book.id
+    }));
+    alert("Book removed from cart");
+  }
+
   finalBuy() {
     alert("Order underway")
   }
