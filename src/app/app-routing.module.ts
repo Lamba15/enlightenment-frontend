@@ -3,6 +3,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {BooksComponent} from "./books/books.component";
 import {BookDetailedComponent} from "./book-detailed/book-detailed.component";
 import {CheckoutComponent} from "./checkout/checkout.component";
+import {SuccessfulOrderComponent} from "./successful-order/successful-order.component";
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
     ]
   },
   {path: 'checkout', component: CheckoutComponent},
+  {path: 'successful-order', component: SuccessfulOrderComponent},
 ]
 
 @NgModule({

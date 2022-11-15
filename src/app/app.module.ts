@@ -15,6 +15,8 @@ import {FormsModule} from "@angular/forms";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CheckoutItemComponent } from './checkout-item/checkout-item.component';
+import { SuccessfulOrderCheckoutItemComponent } from './successful-order-checkout-item/successful-order-checkout-item.component';
+import { SuccessfulOrderComponent } from './successful-order/successful-order.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { CheckoutItemComponent } from './checkout-item/checkout-item.component';
     BookDetailedComponent,
     CheckoutComponent,
     CheckoutItemComponent,
+    SuccessfulOrderCheckoutItemComponent,
+    SuccessfulOrderComponent,
   ],
   imports: [
     BrowserModule,
