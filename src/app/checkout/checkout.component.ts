@@ -30,23 +30,27 @@ export class CheckoutComponent implements OnInit {
       this.totalCartAmount = res.reduce((acc, curr) => {
         acc += (curr.amount * curr.book.price);
         return acc;
-      }, 0)
+      }, 0);
     });
   }
 
   removeItem(cartItem: CartItem) {
     this.cartService.setCart(this.cartItems.filter((x) => {
-      return x.book.id !== cartItem.book.id
+      return x.book.id !== cartItem.book.id;
     }));
     alert("Book removed from cart");
   }
 
-  nameChanged(name: string){
-    console.log(name)
+  nameChanged(name: string) {
+
   }
 
   finalBuy() {
-    this.router.navigateByUrl('/successful-order')
+    if (this.creditCard.match(".*[a-zA-Z]+.*")) {
+      alert("Credit card can't contain letters");
+    } else {
+      this.router.navigateByUrl('/successful-order');
+    }
   }
 
 }
