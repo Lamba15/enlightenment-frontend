@@ -46,8 +46,8 @@ export class CheckoutComponent implements OnInit {
   }
 
   finalBuy() {
-    if (this.creditCard.match(".*[a-zA-Z]+.*")) {
-      alert("Credit card can't contain letters");
+    if (this.creditCard.toString().length !== 16) {
+      alert("Credit card must be 16 numbers");
     } else {
       this.router.navigateByUrl('/successful-order');
     }
